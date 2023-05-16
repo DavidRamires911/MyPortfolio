@@ -2,7 +2,7 @@
 import React from "react";
 import image from "../image/mainphoto.avif";
 import { TypeAnimation } from "react-type-animation";
-import { FaLinkedinIn, FaInstagram, FaFacebookF, FaGithub, FaTwitter} from "react-icons/fa"
+import { FaLinkedinIn, FaInstagram, FaFacebookF, FaGithub, } from "react-icons/fa"
 
 
 
