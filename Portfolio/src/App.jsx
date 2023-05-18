@@ -13,8 +13,8 @@ function App() {
    <div>
 <Navbar/>
 <Main/>
-<Career/>
 <Projects/>
+<Career/>
 <Contact/>
 
  

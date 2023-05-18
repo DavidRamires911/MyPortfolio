@@ -1,0 +1,39 @@
+{ 
+    
+    "Home":"Home",
+    "Career":"Career",
+    "Projects":"Projects",
+    "Resume":"Resume",
+    "Contact":"Contact",
+
+    "I":"I'm David Correia",
+    "Hi":"Hi, i'm a Web Junior Developer",
+    "Passionate":"Passionate about code and technology",
+    "Eager":"Eager to dive into the industry",
+
+    "Soul":"Soul campers, Rent Service Agent",
+     "DetailsSoul":"Handling incoming reservations, welcoming guests and taking care of check-ins and check-outs Preparing and cleaning campervans Maintaining campervans in top condition and monitor maintenance, Registering guests, monitoring stock and processing payments ,Handling complaints and troubleshooting emergencies.",
+     "DurationS":"3 years",
+
+     "Ozadi":"Ozadi Hotel, Economat",
+     "DetailsOzadi": "Performing tasks related to the Economat/Purchasing. Receive Suppliers, analyze if the product presents the necessary conditions and if there were no misconceptions.Distribute the products by department of the hotel and whether they comply with the rules of haccp.Enter invoices, credit notes, waybills in the PMS system ",
+     "DurationO":"6 Months",
+    
+     "Ryanair": "Ryanair, Ground handling Operator",
+     "DetailsRyanair": "Ground handling operator.Perform loading and unloading and transportation tasks baggage, cargo and mail to and from aeroplanes, warehouses and terminals. Drive vehicles and trailer material and position aircraft support equipment.Reception of passengers.",
+     "DurationR":"2 years",
+
+    "Portway": " Ground handling operator",
+    "DetailsPortway":"Perform the same functions as the previously mentioned job.",
+    "DurationP":"3 years"  ,
+   
+    "Tcareer":"Career",
+
+    "ProjectsT": "Projects",
+    "ProjectDetails":"These projects were completed during the Ironhack Bootcamp. RatAttack was developed solo, while the others were done in pairs, with a time limit of one week per project. The main tools used were MongoDB, React, JavaScript, Express, Node.js, CSS, Bootstrap, Postman, Axios, and various others. Enchant an litle bit more"
+     
+    }
+
+    
+
+     

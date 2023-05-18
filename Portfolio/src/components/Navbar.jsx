@@ -7,7 +7,11 @@ import {
 } from "react-icons/ai";
 import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
-import { useTranslation } from "react-i18next";
+import { useTranslation} from "react-i18next";
+import i18n from "../i18next";
+
+////All information are in Translation JSon
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -16,20 +20,34 @@ const Navbar = () => {
     console.log("change nav");
   };
 
+  const { t } = useTranslation();
 
-  const {t, i18n}= useTranslation()
-
-function handleClick(lang){
-i18n.changeLanguage(lang)
-
-}
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+  
   return (
     <div>
-      <div className="fixed w-full h-screen  flex flex-col justify-end items-center z-20"
-        
-      >
-        <button  onClick={() => handleClick("en")} className="bg-gray-100 shadow-gray-400 mt-1 w-5%  p-2 rounded-lg cursor-pointer hover:scale-110 ease-in duration-200" >EN</button>
-        <button onClick={() => handleClick("pt")} className="bg-gray-100 shadow-gray-400 mt-1 w-5% p-2 rounded-lg cursor-pointer hover:scale-110 ease-in duration-200">PT</button>
+      <div className="absolute top-0 left-0 w-full flex justify-center items-center z-20">
+       
+      <button
+    onClick={() => {
+      changeLanguage("en");
+      window.location.reload();
+    }}
+    className="bg-gray-100 shadow-gray-400 mt-1 w-5% p-2 rounded-lg cursor-pointer hover:scale-110 ease-in duration-200"
+  >
+    EN
+  </button>
+  <button
+    onClick={() => {
+      changeLanguage("pt");
+      window.location.reload();
+    }}
+    className="bg-gray-100 shadow-gray-400 mt-1 w-5% p-2 rounded-lg cursor-pointer hover:scale-110 ease-in duration-200"
+  >
+    PT
+  </button>
       </div>
       <div>
         <AiOutlineMenu
@@ -45,7 +63,7 @@ i18n.changeLanguage(lang)
               className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
             >
               <AiOutlineHome size={20} />
-              <span className="pl-4">Home</span>
+              <span className="pl-4">{t(`Home`)}</span>
             </a>
             <a
               onClick={handleNav}
@@ -53,7 +71,7 @@ i18n.changeLanguage(lang)
               className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
             >
               <GrProjects size={20} />
-              <span className="pl-4">Career</span>
+              <span className="pl-4">{t(`Career`)}</span>
             </a>
             <a
               onClick={handleNav}
@@ -61,7 +79,7 @@ i18n.changeLanguage(lang)
               className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
             >
               <AiOutlineProject size={20} />
-              <span className="pl-4">Projects</span>
+              <span className="pl-4">{t(`Projects`)}</span>
             </a>
             <a
               onClick={handleNav}
@@ -69,7 +87,7 @@ i18n.changeLanguage(lang)
               className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
             >
               <BsPerson size={20} />
-              <span className="pl-4">Resume</span>
+              <span className="pl-4">{t(`Resume`)}</span>
             </a>
             <a
               onClick={handleNav}
@@ -77,7 +95,7 @@ i18n.changeLanguage(lang)
               className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
             >
               <AiOutlineMail size={20} />
-              <span className="pl-4">Contact</span>
+              <span className="pl-4">{t(`Contact`)}</span>
             </a>
           </div>
         ) : (
