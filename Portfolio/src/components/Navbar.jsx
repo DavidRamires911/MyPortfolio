@@ -9,6 +9,7 @@ import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
 import { useTranslation} from "react-i18next";
 import i18n from "../i18next";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
 
 ////All information are in Translation JSon
 
@@ -65,6 +66,20 @@ const Navbar = () => {
               <AiOutlineHome size={20} />
               <span className="pl-4">{t(`Home`)}</span>
             </a>
+
+            <a
+              onClick={handleNav}
+              href="#ironhack"
+              className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
+            >
+              <HiOutlineDesktopComputer size={20} />
+              <span className="pl-4">{t(`Home`)}</span>
+            </a>
+
+
+
+
+
             <a
               onClick={handleNav}
               href="#career"
@@ -109,18 +124,28 @@ const Navbar = () => {
             >
               <AiOutlineHome size={20} />
             </a>
+
             <a
-              href="#career"
+              href="#ironhack"
               className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
             >
-              <GrProjects size={20} />
+              <HiOutlineDesktopComputer size={20} />
             </a>
+
             <a
               href="#projects"
               className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
             >
               <AiOutlineProject size={20} />
             </a>
+
+            <a
+              href="#career"
+              className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            >
+              <GrProjects size={20} />
+            </a>
+            
             <a
               href="#main"
               className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
