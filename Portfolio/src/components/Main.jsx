@@ -1,29 +1,39 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, {Suspense} from "react";
-import image from "../image/mainphoto.avif";
+import {Suspense, useContext} from "react";
+import image from "../image/foto.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn, FaInstagram, FaFacebookF, FaGithub, } from "react-icons/fa"
 import { useTranslation } from 'react-i18next'
+import { ThemeContext } from "../ThemeContext";
 
 ////All information are in Translation JSon
 
 
 const Main = () => {
   const { t } = useTranslation();
+  const { darkMode} = useContext (ThemeContext);
+  
 
  
 
   return (
     <div id="main">
       <img
-        className="w-full h-screen object-cover object-left scale-x-[-1] "
+        className="w-full h-screen object-cover object-left  "
         src={image}
         alt="image"
       />
-      <div className="w-full h-screen absolute top-0 left-0 bg-white/50 ">
-        <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center   ">
-          <h1 className="sm:text-5xl text-4xl font-bold text-gray-800 " >{t("I")} </h1>
-          <h2 className="flex sm:text-3xl pt-4 text-gray-800 " >
+       {/* bg-slate-800/50 */}
+      <div className={`w-full h-screen absolute top-0 left-0  ${darkMode
+      ?"bg-slate-900/80"
+      :"bg-white/50"} `}>
+        <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center    ">
+          <h1 className={ `sm:text-5xl text-4xl font-bold  ${darkMode
+      ?"text-orange-400 "
+      :"text-gray-800"} `}  >{t("I")} </h1>
+          <h2 className={ `flex sm:text-3xl pt-4 text-gray-800  ${darkMode
+      ?"text-orange-300"
+      :"text-gray-700"} `} >
             {" "}
             <Suspense fallback="Loading...">
             <TypeAnimation
@@ -50,16 +60,28 @@ const Main = () => {
           </div>
           <div className="flex justify-between pt-6 max-w-[200px] w-full "> 
           <a href="https://www.linkedin.com/in/david-correia-30239822b/">
-          <FaLinkedinIn className="cursor-pointer" size={25} />
+          <FaLinkedinIn size={25} className={`cursor-pointer ${darkMode
+          ?" text-orange-300 "
+          : "text-black "
+          } `}  />
           </a>
           <a href="https://www.instagram.com/davidcorreia91/">
-          <FaInstagram className="cursor-pointer" size={25} />
+          <FaInstagram  className={`cursor-pointer ${darkMode
+          ?" text-orange-300 "
+          : "text-black "
+          } `}  size={25} />
           </a>
           <a href="https://www.facebook.com/profile.php?id=100006689835857">
-          <FaFacebookF className="cursor-pointer" size={25} />
+          <FaFacebookF  className={`cursor-pointer ${darkMode
+          ?" text-orange-300 "
+          : "text-black "
+          } `}  size={25} />
           </a>
           <a href="https://github.com/DavidRamires911">
-          <FaGithub  className="cursor-pointer" size={25} />
+          <FaGithub   className={`cursor-pointer ${darkMode
+          ?" text-orange-300 "
+          : "text-black "
+          } `}  size={25} />
           </a>
 
 

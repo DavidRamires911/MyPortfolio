@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import CareerItem from "./CareerItem";
 import { useTranslation } from 'react-i18next'
+import { ThemeContext } from "../ThemeContext";
 
 ////All information are in Translation JSon
 
 
 const Career = () => {
+  const {darkMode}= useContext (ThemeContext)
   const { t } = useTranslation();
+
+  const title = darkMode
+  ? ' text-orange-400'
+  : ' text-gray-700  ';
 
   const data = [
     {
@@ -28,6 +34,14 @@ const Career = () => {
       details: t("DetailsRyanair"),
     },
     {
+      year: "2014",
+      job: t("Hotel"),
+      duration: t("DurationH"),
+      details: t("DetailsHotel"),
+    },
+
+
+    {
       year: "2012",
       job: t("Portway"),
       duration: t("DurationP"),
@@ -37,7 +51,7 @@ const Career = () => {
 
   return (
     <div id="career" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e] mb-10">{t("Tcareer")}</h1>
+      <h1 className={ `text-4xl font-bold text-center  mb-10 ${title} }` }>{t("Tcareer")}</h1>
       {data.map((item, idx) => (
         <CareerItem
           key={idx}
