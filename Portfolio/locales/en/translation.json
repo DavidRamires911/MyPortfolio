@@ -42,6 +42,14 @@
     "Module1":"Module 1: Learned HTML, CSS, and JavaScript for web development and create a personalized game with responsive design using CSS and JavaScript.",
       "Module2":"Module 2: Learned and back-end development with Node.js, Express.js, Handlebars and MongoDB. Build servers, work with databases, integrate APIs, test routes with Postman, and deploy projects.",
       "Module3":"Module 3: Become proficient in ReactJS. Develop a full-stack application combining back-end skills with ReactJS for a seamless user experience.",
-      "FinalProject":"Final Project: After approximately 500 to 600 hours, into intensive learning, extensive practice, and projects implementation, i showcase all skills by creating a MERN-based full-stack application."
+      "FinalProject":"Final Project: After approximately 500 to 600 hours, into intensive learning, extensive practice, and projects implementation, i showcase all skills by creating a MERN-based full-stack application.",
+   
+    "NAME":"NAME",
+    "subject":"SUBJECT",
+    "PHONE":"PHONE",
+    "MESSAGE":"MESSAGE",
+    "sMESSAGE":"Send Message"
+   
+   
     }
 

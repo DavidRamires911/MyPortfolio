@@ -29,10 +29,10 @@ function Projects() {
         {t("ProjectDetails")} {" "}
       </p>
       <div className="grid sm:grid-cols-2 gap-12 ">
-       <a href=""> <ProjectItem img={mainphoto}  title="Main Photo"/></a>
        <a href="https://warriors-cd-bakery.adaptable.app/"> <ProjectItem img={cdBakery} title="Cd Bakery" Description="Javascript - Handlebars - Mongodb - Express - Bootstrap - Node.js"  /></a>
        <a href="https://davidramires911.github.io/Project-1/index.html"> <ProjectItem img={ratAttack} title="Rat Attack" Description="Javascript - Css"/></a>
        <a href="https://project-travels.netlify.app/"> <ProjectItem img={travel} title="Travel" Description="React - Mongodb - Express - Bootstrap - Node.js - Postman" /></a>
+       <a href=""> <ProjectItem img={mainphoto}  title="Work in progress"/></a>
       </div>
     </div>
   );
