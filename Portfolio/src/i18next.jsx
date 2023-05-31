@@ -12,9 +12,10 @@ i18n
   .init({
     backend: {
       loadPath: `/locales/{{lng}}/{{ns}}.json`,
+      crossDomain: true
      
     },
-    react:{useSuspense:false},
+    
     fallbackLng: "en",
     debug: true,
     whitelist: Languages,
