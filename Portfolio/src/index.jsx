@@ -16,7 +16,7 @@ ReactDOM.render(
         <App />
   </Suspense>,
       </ThemeProvider>
-    </I18nextProvider>
+    </I18nextProvider>,
   document.getElementById('root')
 );
 
