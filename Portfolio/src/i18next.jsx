@@ -19,8 +19,8 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: (lng, ns) => {
-        const url = `/locales/${lng}/${ns}.json`;
+      loadPath: (lng) => {
+        const url = `/locales/${lng}/translation.json`;
         console.log('URL ', url);
         return url;
       },
