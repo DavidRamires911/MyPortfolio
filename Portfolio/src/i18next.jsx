@@ -9,6 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
     debug: true,
+    allowMultiLoading:false,
     keySeparator: false,
     interpolation: {
       escapeValue: false,
