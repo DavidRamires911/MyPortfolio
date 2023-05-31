@@ -10,11 +10,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    backend: {
-      loadPath: `/locales/{{lng}}/{{ns}}.json`,
-      crossDomain: true
-     
-    },
+   
     
     fallbackLng: "en",
     debug: true,
@@ -23,6 +19,14 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    backend: {
+      loadPath: (lng, ns) => {
+        const url = `/locales/${lng}/${ns}.json`;
+        console.log('URL ', url);
+        return url;
+      },
+      crossDomain: true
+    }
     
   });
 
