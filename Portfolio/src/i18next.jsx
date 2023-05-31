@@ -17,8 +17,8 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: "src/locales/{{lng}}/{{ns}}.json",
-      baseURL: "/https://davidramires-portfolio.netlify.app/",
+      loadPath: "/src/locales/{{lng}}/{{ns}}.json",
+      baseURL: "/",
     },
   });
 
