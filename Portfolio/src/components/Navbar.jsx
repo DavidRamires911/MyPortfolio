@@ -66,7 +66,7 @@ const Navbar = () => {
         </button>
         <button
           onClick={() => {
-            changeLanguage("br");
+            changeLanguage("pt");
             window.location.reload();
           }}
           className={`mt-1 w-5% p-2 rounded-lg cursor-pointer hover:scale-110  ease-in duration-200 flex items-center justify-center ${
