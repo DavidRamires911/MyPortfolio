@@ -17,8 +17,8 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json",
-      baseURL: "/",
+      loadPath: "src/locales/{{lng}}/{{ns}}.json",
+      baseURL: "https://spiffy-conkies-36ee11.netlify.app/",
     },
   });
 
