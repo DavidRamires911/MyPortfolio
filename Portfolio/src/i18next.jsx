@@ -20,6 +20,9 @@ i18n
         return url;
       },
     },
+    supportedLngs: ['en', 'pt'], // Add or remove languages as needed
+    // Specify the fallback language
+    fallbackLng: 'en', // Set the default fallback languag
   });
 
 export default i18n;
