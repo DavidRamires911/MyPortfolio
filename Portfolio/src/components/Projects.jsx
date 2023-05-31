@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import ProjectItem from "./ProjectItem";
 import mainphoto from "../image/mainphoto.avif";
 import cdBakery from "../image/cd-Bakery.png"
