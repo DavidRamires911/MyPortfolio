@@ -10,16 +10,19 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    backend: {
+      loadPath: `/locales/{{lng}}/{{ns}}.json`,
+     
+    },
+    react:{useSuspense:false},
     fallbackLng: "en",
     debug: true,
     whitelist: Languages,
+    keySeparator: false,
     interpolation: {
       escapeValue: false,
     },
-    backend: {
-      loadPath: `/locales/{{lng}}/{{ns}}.json`,
-      baseURL: "/",
-    },
+    
   });
 
 export default i18n;
