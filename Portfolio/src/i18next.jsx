@@ -1,3 +1,8 @@
+
+//build settings netlify
+// quando fazer deploy t Build command : npm run build && cp -R locales dist/locales
+//para forçar a ler o locales folder
+
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import Backend from "i18next-http-backend";
@@ -25,5 +30,5 @@ i18n
     // Specify the fallback language
     fallbackLng: 'en', // Set the default fallback languag
   });
-
+  
 export default i18n;
