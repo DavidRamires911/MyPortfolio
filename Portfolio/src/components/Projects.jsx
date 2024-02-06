@@ -35,7 +35,8 @@ function Projects() {
       <a href="https://iridescent-dolphin-1dea5a.netlify.app/"><ProjectItem img={Civiprime} title="Civiprime" Description="React - Scss - Sanity Backend"/> </a>
       <a href ="https://e-commerce-orpin-omega.vercel.app/"><ProjectItem img={ecommmerce} title="E-commerce" Description="React - Tailwind - NextJs - MongoDB"/></a>
       <a href ="https://ecommerce-admin-two-tau.vercel.app/"><ProjectItem img={dashboard} title="E-commerce Admin-Dashboard" Description="React - Tailwind - NextJs - MongoDB"/></a>
-      <a href="https://adorable-zuccutto-7b7a09.netlify.app/"><ProjectItem img={mseverin} title="MSeverin" Description="React - Scss - Sanity Backend"/> </a>      <a href ="https://cozy-creponne-622e6e.netlify.app/"><ProjectItem img={Remex} title="Remex Imobiliaria" Description="Vite - Css "/></a>
+      <a href="https://adorable-zuccutto-7b7a09.netlify.app/"><ProjectItem img={mseverin} title="MSeverin" Description="React - Scss - Sanity Backend"/> </a>   
+         <a href ="realstate-delta.vercel.app"><ProjectItem img={Remex} title="Remex Imobiliaria" Description="Vite - Css "/></a>
       
        <a href="https://warriors-cd-bakery.adaptable.app/"> <ProjectItem img={cdBakery} title="Cd Bakery" Description="Javascript - Handlebars - Mongodb - Express - Bootstrap - Node.js"  /></a>
        <a href="https://davidramires911.github.io/Project-1/index.html"> <ProjectItem img={ratAttack} title="Rat Attack" Description="Javascript - Css"/></a>
