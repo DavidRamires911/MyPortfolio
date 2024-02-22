@@ -9,8 +9,12 @@
   "Passionate": "Apaixonado por codigo e tecnologia",
   "Eager": "Empolgado para mergulhar na indústria",
 
+  "Free":"Freelancer Full stack Developer",
+  "DetailsFree":"Adquiri mais experiência através de trabalhos em regime de freelancing, procurando ativamente online por potenciais clientes que necessitassem de websites. Este esforço implicou não só a compreensão das necessidades específicas de cada cliente, mas também o desenvolvimento de soluções web à medida. A interação com clientes de diversos sectores permitiu-me aprimorar as competências de comunicação e alargar o meu portfólio.",
+  "DurationZ":"Actualmente",
+
   "Soul": "Soul campers, Agente de Serviço de Aluguer",
-  "DetailsSoul": "Gestão de reservas recebidas, acolhimento dos hóspedes efetuando check-ins e check-outs. Preparação minuciosa e limpeza das autocaravanas. Manutenção e supervisão constante das autocaravanas. Registo dos hóspedes, monitorização do inventário e processamento de pagamentos. Lidar com reclamações e resolver emergências com prontidão.",
+  "DetailsSoul": "Gestão de reservas recebidas, acolhimento dos hóspedes efetuando check-ins , check-outs e apoio ao cliente. Manutenção e supervisão constante das autocaravanas. Registo dos hóspedes, monitorização do inventário e processamento de pagamentos. Lidar com reclamações e resolver emergências com prontidão. ",
   "DurationS": "3 anos",
 
   "Ozadi": "Ozadi Hotel, Economato",
@@ -32,7 +36,7 @@
   "Tcareer": "Carreira",
 
   "ProjectsT": "Projectos",
-  "ProjectDetails": "Esses projetos foram concluídos durante o Bootcamp da Ironhack. RatAttack foi desenvolvido individualmente, enquanto os outros foram feitos em duplas, com um prazo de uma semana para cada projeto. As principais ferramentas utilizadas foram MongoDB, React, JavaScript, Express, Node.js, CSS, Bootstrap, Postman, Axios e várias outras.",
+  "ProjectDetails":"Desenvolvi projetos utilizando principalmente JavaScript, React e Angular para o frontend, com tecnologias de backend incluindo Node.js com Express.js, Next.js, e Supabase. Middleware e React Query foram fundamentais para facilitar a comunicação e a gestão de dados entre o frontend e o backend, otimizando as interações. Para a estilização, usei CSS, Tailwind e Styled Components. Integrei diversas APIs, como a Geolocation API, OAuth 2.0, Google APIs, IMDb API, Spotify, AWS, além de utilizar o MongoDB como banco de dados, criando soluções dinâmicas e interativas, ainda adquiri experiência com gestão de CPanel, Deploy, domains e dns e teste de rotas com Postman e Thunder Client",
 
   "PreCourse": "Pré-Curso",
   "PreDetails": "Durante a preparação pré-bootcamp na Ironhack, passei por 50 a 75 horas de treinamento em JavaScript, HTML, CSS, Git e GitHub. Esta preparação abrangente garantiu que eu estivesse totalmente preparado para uma experiência bem-sucedida no Bootcamp.",

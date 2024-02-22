@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../ThemeContext";
 
@@ -7,7 +7,7 @@ function Contact() {
   const {darkMode}= useContext (ThemeContext)
 
   return (
-    <div id="contact" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
+    <div id="contact" className="max-w-[1240px] m-auto md:pl-20 p-4 py-16 ">
       <h1 className={ `py-4 text-4xl font-bold text-center text-[#001b5e] ${darkMode
       ?"text-orange-400"
       :"text-gray-700"

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import CareerItem from "./CareerItem";
 import { useTranslation } from 'react-i18next'
 import { ThemeContext } from "../ThemeContext";
@@ -15,6 +15,12 @@ const Career = () => {
   : ' text-gray-700  ';
 
   const data = [
+    {
+      year: "2023",
+      job: t("Free"),
+      duration: t("DurationZ"),
+      details: t('DetailsFree'),
+    },
     {
       year: "2019",
       job: t("Soul"),
@@ -50,7 +56,7 @@ const Career = () => {
   ];
 
   return (
-    <div id="career" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
+    <div id="career" className="max-w-[1240px] m-auto md:pl-20 p-4 py-16 ">
       <h1 className={ `text-4xl font-bold text-center  mb-10 ${title} }` }>{t("Tcareer")}</h1>
       {data.map((item, idx) => (
         <CareerItem

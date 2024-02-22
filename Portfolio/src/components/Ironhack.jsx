@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import  { useContext, useState } from 'react';
 import ironhackLogo2 from "../image/ironhackLogo2.png";
 import { useTranslation } from 'react-i18next';
 import { ThemeContext } from '../ThemeContext';
@@ -18,7 +18,7 @@ function Ironhack() {
     : 'bg-gray-500 hover:bg-gray-700 text-white';
   return (
 
-    <div id="ironhack" className={`max-w-[1040px] m-auto md:pl-20 p-4 py-16 flex flex-col md:flex-row ${darkMode
+    <div id="ironhack" className={`max-w-[1240px] m-auto md:pl-20 p-4 py-16 flex flex-col md:flex-row ${darkMode
       ?"bg-gray-800"
       :"bg-white "
       }`}>
