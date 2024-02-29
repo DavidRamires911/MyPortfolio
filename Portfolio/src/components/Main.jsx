@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import {Suspense, useContext} from "react";
-import image from "../image/foto.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn, FaInstagram, FaFacebookF, FaGithub, } from "react-icons/fa"
 import { useTranslation } from 'react-i18next'
