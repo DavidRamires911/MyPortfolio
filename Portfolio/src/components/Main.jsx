@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaLinkedinIn, FaInstagram, FaFacebookF, FaGithub, } from "react-icons/fa"
 import { useTranslation } from 'react-i18next'
 import { ThemeContext } from "../ThemeContext";
-
+import laptop from "../image/lapto.jpg";
 ////All information are in Translation JSon
 
 
@@ -20,7 +20,7 @@ const Main = () => {
     <div id="main">
       <img
         className="w-full h-screen object-cover object-left  "
-        src={image}
+        src={laptop}
         alt="image"
       />
        {/* bg-slate-800/50 */}
